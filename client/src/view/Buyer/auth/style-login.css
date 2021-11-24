@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body #root {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+header.login {
+  height: 50px;
+  width: 100%;
+  background-color: #eef9f9;
+  display: flex;
+  justify-content: center;
+  box-shadow: none;
+}
+header.login img {
+  height: 50px;
+  width: auto;
+}
+
+.offcanvas-body .link {
+  text-decoration: none;
+  font-size: 20px;
+  margin-top: 10px;
+  color: #0d6efd;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+main.info-user {
+  display: flex;
+  justify-content: center;
+  height: calc(100vh - 50px);
+  width: 402px;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 402px) {
+  main.info-user {
+    width: calc(100% - 20px);
+  }
+}
+main.info-user .login-text {
+  display: flex;
+  flex-direction: column;
+}
+main.info-user .login-text .login-text-head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 2px 4px 0 0;
+}
+main.info-user .login-text .login-text-head h4 {
+  font-size: 24px;
+  color: #1a1a1a;
+  font-weight: 600;
+}
+main.info-user .login-text .description {
+  color: #707070;
+  font-size: 14px;
+  margin: 4px 0px 24px;
+}
+main.info-user .form-login {
+  display: flex;
+  flex-direction: column;
+}
+main.info-user .form-login .input-area {
+  width: 100%;
+  height: 48px;
+  padding: 14px 16px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  outline: none;
+  margin-bottom: 24px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+main.info-user .form-login .wrong {
+  outline: 1px solid red;
+  text-align: center;
+}
+main.info-user .form-login .input-area:focus {
+  border: 1px solid #00b14f;
+}
+main.info-user .form-login .submit-btn {
+  background-color: #f5f5f5;
+  height: 48px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: not-allowed;
+  transition: all 0.3s ease-in-out;
+}
+main.info-user .form-login .submit-btn.active {
+  cursor: pointer;
+  background-color: #00b14f;
+  color: white;
+}
+main.info-user .form-login .submit-btn.active:hover {
+  background-color: #1ebd60;
+}
+main.info-user .verify-account {
+  color: #676767;
+  font-size: 10px;
+  text-align: center;
+  margin-top: 8px;
+}
+main.info-user .verify-account a {
+  color: #126df8;
+  text-decoration: none;
+}
+
+main.info-user .handlebtn {
+  margin-top: 10px;
+  text-align: center;
+  color: #707070;
+  font-size: 14px;
+}
+
+main.info-user .handlebtn a {
+  color: #126df8;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style-login.css.map */

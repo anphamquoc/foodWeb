@@ -1,0 +1,134 @@
+main.cart {
+  background-color: white;
+  padding: 60px 40px;
+  border-top: 2px solid #676767;
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+}
+main.cart .title {
+  font-weight: bold;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+main.cart .time {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: left;
+  color: #676767;
+}
+main.cart .swiper-container {
+  margin-top: 20px;
+  display: flex;
+}
+main.cart .swiper-container .swiper-slide {
+  padding: 0 8px 48px;
+}
+main.cart .swiper-container .swiper-slide .store1 {
+  margin-top: 50px;
+  width: 100%;
+}
+main.cart .swiper-container .swiper-slide .store1 .title2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+main.cart .swiper-container .swiper-slide .store1 .food1 {
+  display: flex;
+  gap: 10px;
+  justify-content: left;
+  margin-top: 30px;
+}
+main.cart .swiper-container .swiper-slide .store1 .food1 .sub img {
+  width: 25px;
+  height: 25px;
+  margin-top: 2px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+main.cart .swiper-container .swiper-slide .store1 .food1 span {
+  font-weight: bold;
+  font-size: 20px;
+}
+main.cart .swiper-container .swiper-slide .store1 .food1 span.quantity {
+  width: 50px;
+}
+main.cart .swiper-container .swiper-slide .store1 .food1 span.price {
+  width: 90px;
+}
+main.cart .swiper-container .swiper-slide .store1 .food1 .add img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+main.cart .swiper-container .swiper-slide .store1 .food1 .foodname {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+main.cart .swiper-container .swiper-slide .store1 .food1 .foodname .action {
+  cursor: pointer;
+}
+
+main.cart .swiper-container .swiper-slide .store1 .food1 .monan img {
+  width: 60px;
+  height: 60px;
+  margin-left: 20px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+main.cart .swiper-container .swiper-slide .store1 .food1 .tenmonan {
+  font-size: 15px;
+}
+main.cart .swiper-container .swiper-slide .store1 .food1 .price {
+  text-align: right;
+  margin-left: 30px;
+}
+main.cart .thanhtoan {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 50px 30px;
+  border-radius: 5px;
+  z-index: 0;
+  height: 50px;
+}
+main.cart .thanhtoan .price {
+  display: flex;
+  justify-content: space-between;
+}
+main.cart .thanhtoan .dathang {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+main.cart .thanhtoan .dathang .xemlaidon {
+  width: 100%;
+  height: 40px;
+  font-size: 20px;
+  background-color: #00b14f;
+  color: white;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 520px) {
+  main.cart .swiper-container .swiper-slide .store1 .food1 {
+    display: flex;
+    gap: 3px;
+    justify-content: left;
+    margin-top: 30px;
+  }
+  main.cart {
+    width: 100%;
+  }
+  main.cart .swiper-container .swiper-slide .store1 .food1 span.price {
+    width: 50px;
+  }
+}

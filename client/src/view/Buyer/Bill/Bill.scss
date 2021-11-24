@@ -1,0 +1,48 @@
+main.bill {
+  margin-top: 90px;
+  width: 50%;
+  margin-bottom: 90px;
+  .items {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    .item {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      padding: 10px;
+      box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.2);
+      .total {
+        display: flex;
+        justify-content: space-between;
+      }
+      .all-food {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .description {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 7% 83% 10%;
+        .quantity {
+          font-size: 25px;
+        }
+        .item-description {
+          display: flex;
+          flex-direction: row;
+          gap: 10px;
+          img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    width: 80%;
+  }
+}

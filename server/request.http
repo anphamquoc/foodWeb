@@ -1,0 +1,101 @@
+GET http://localhost:5000/user
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTc3ZDIyMDZkYTk2OGM0YzcyNmMyZjIiLCJpYXQiOjE2MzU1ODYyNjN9.yxH8XD_JYTgywoP0xAWa2d3J_tHnQQQCTujj3-OBfhk
+###
+PUT http://localhost:5000/user
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTc3ZDIyMDZkYTk2OGM0YzcyNmMyZjIiLCJpYXQiOjE2MzU1ODYyNjN9.yxH8XD_JYTgywoP0xAWa2d3J_tHnQQQCTujj3-OBfhk
+
+{
+    "name": "Pham An",
+    "address": "Nghĩa Phương",
+    "phoneNumber": "12345676"
+}
+###
+POST http://localhost:5000/user/login
+Content-Type: application/json
+
+{
+    "username": "hello5424",
+    "password": "123"
+}
+###
+GET http://localhost:5000/quanan
+
+###
+POST http://localhost:5000/quanan
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTc3ZDIyMDZkYTk2OGM0YzcyNmMyZjIiLCJpYXQiOjE2MzYzNDAxODB9.ab_JJElemOeKpSqo0iwcsCHURSZRyoO-iY3_akA6YB4
+
+{
+    "makv": "455",
+    "matp": "456",
+    "tenqa": "Phạm Quốc Ấn",
+    "loaimonan": "617caa241bcafa481d2305e8",
+    "diachi": "Nghĩa Phương",
+    "dienthoai": "223842",
+    "thoigianphucvu": "20h - 30h",
+    "dattoithieu": "5"
+}
+###
+POST http://localhost:5000/loaimonan
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTc3ZDIyMDZkYTk2OGM0YzcyNmMyZjIiLCJpYXQiOjE2MzUyNDI1Mjh9.atqy1Y-Dhm1Vo3mRnagNlj6FKl05SK-kV4211O4kNnM
+Content-Type: application/json
+
+{
+    "tenloai": "Khô",
+    "url": "/image/"
+}
+
+###
+GET http://localhost:5000/loaimonan
+###
+GET http://localhost:5000/monan/6180e917d001ef376a5eb1e9
+
+###
+POST http://localhost:5000/monan/618891e4bac6dd482257d533
+Content-Type: application/json
+
+{
+    "tenmonan": "Cơm cháy",
+    "gia": 500000,
+    "urlhinhanh": "image/imageFood/mon5.png"
+}
+
+
+###
+GET http://localhost:5000/quanan/617e044a0cc09e84ef075875
+
+###
+GET http://localhost:5000/cart
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTc3ZDIyMDZkYTk2OGM0YzcyNmMyZjIiLCJpYXQiOjE2MzU4MzgyMTN9.bPal81OmLl-kA-a9AubkSe2hlz3sQcaDDezz6nqfU1c
+
+###
+POST http://localhost:5000/cart/6180e93dd001ef376a5eb1f2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTc3ZDIyMDZkYTk2OGM0YzcyNmMyZjIiLCJpYXQiOjE2MzU4MzgyMTN9.bPal81OmLl-kA-a9AubkSe2hlz3sQcaDDezz6nqfU1c
+Content-Type: application/json
+
+{
+    "url": "image/imageFood/mon2.png",
+    "name": "Cơm heo",
+    "price": 100000,
+    "quantity": 3
+}
+###
+GET http://localhost:5000/search/Cho tre
+
+###
+GET http://localhost:5000/cart
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTc3ZDIyMDZkYTk2OGM0YzcyNmMyZjIiLCJpYXQiOjE2MzU4MzgyMTN9.bPal81OmLl-kA-a9AubkSe2hlz3sQcaDDezz6nqfU1c
+
+###
+DELETE http://localhost:5000/cart/618254a5eb0d83686de121c7
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTc3ZDIyMDZkYTk2OGM0YzcyNmMyZjIiLCJpYXQiOjE2MzU4MzgyMTN9.bPal81OmLl-kA-a9AubkSe2hlz3sQcaDDezz6nqfU1c
+
+###
+PUT http://localhost:5000/cart/618293f9adbe755e34f3fb45
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTc3ZDIyMDZkYTk2OGM0YzcyNmMyZjIiLCJpYXQiOjE2MzU4MzgyMTN9.bPal81OmLl-kA-a9AubkSe2hlz3sQcaDDezz6nqfU1c
+Content-Type: application/json
+
+{
+    "quantity": 3
+}
