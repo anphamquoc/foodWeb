@@ -79,6 +79,7 @@ main.cart .swiper-container .swiper-slide .store1 .food1 .monan img {
 }
 main.cart .swiper-container .swiper-slide .store1 .food1 .tenmonan {
   font-size: 15px;
+  width: 150px;
 }
 main.cart .swiper-container .swiper-slide .store1 .food1 .price {
   text-align: right;

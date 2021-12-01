@@ -1,0 +1,28 @@
+{"_id":{"$oid":"61935ad689f8c56416a019fa"},"maqa":"619358da89f8c56416a019f0","tenmonan":"Bánh mì","gia":20000,"urlhinhanh":"image/food/BanhMiTuanMap.jpg","__v":0}
+{"_id":{"$oid":"61935af189f8c56416a019fc"},"maqa":"619358da89f8c56416a019f0","tenmonan":"Bánh trứng","gia":20000,"urlhinhanh":"image/food/BanhTrung.jpg","__v":0}
+{"_id":{"$oid":"61935b2f89f8c56416a019fe"},"maqa":"619358da89f8c56416a019f0","tenmonan":"Chả bò","gia":50000,"urlhinhanh":"image/food/ChaBoTuanMap.jpg","__v":0}
+{"_id":{"$oid":"61935b6289f8c56416a01a00"},"maqa":"619358da89f8c56416a019f0","tenmonan":"Xôi","gia":15000,"urlhinhanh":"image/food/XoiTuanMap.jpg","__v":0}
+{"_id":{"$oid":"61935b8289f8c56416a01a02"},"maqa":"6193595389f8c56416a019f2","tenmonan":"Cà phê sữa","gia":15000,"urlhinhanh":"image/food/CaPheSuaDa.jpg","__v":0}
+{"_id":{"$oid":"61935bac89f8c56416a01a04"},"maqa":"6193595389f8c56416a019f2","tenmonan":"Pepsi","gia":20000,"urlhinhanh":"image/food/Pepsi.png","__v":0}
+{"_id":{"$oid":"61935bbf89f8c56416a01a06"},"maqa":"6193595389f8c56416a019f2","tenmonan":"Pepsi chanh","gia":20000,"urlhinhanh":"image/food/PepsiChanh.png","__v":0}
+{"_id":{"$oid":"61935bed89f8c56416a01a0a"},"maqa":"6193595389f8c56416a019f2","tenmonan":"Soda Dâu Tằm","gia":20000,"urlhinhanh":"image/food/SodaDauTam.jpg","__v":0}
+{"_id":{"$oid":"61935cdd89f8c56416a01a0c"},"maqa":"6193595389f8c56416a019f2","tenmonan":"Trà chanh dâu tây","gia":30000,"urlhinhanh":"image/food/TraChanhDauTay.jpg","__v":0}
+{"_id":{"$oid":"61935cf089f8c56416a01a0e"},"maqa":"6193595389f8c56416a019f2","tenmonan":"Trà đào","gia":30000,"urlhinhanh":"image/food/TraDao.jpg","__v":0}
+{"_id":{"$oid":"61935cfd89f8c56416a01a10"},"maqa":"6193595389f8c56416a019f2","tenmonan":"Trà đào cam sả","gia":30000,"urlhinhanh":"image/food/TraDaoCamSa.jpg","__v":0}
+{"_id":{"$oid":"61935d0b89f8c56416a01a12"},"maqa":"6193595389f8c56416a019f2","tenmonan":"Trà dâu tây","gia":30000,"urlhinhanh":"image/food/TraDauTay.jpg","__v":0}
+{"_id":{"$oid":"61935d1d89f8c56416a01a14"},"maqa":"6193595389f8c56416a019f2","tenmonan":"Trà gạo rang","gia":30000,"urlhinhanh":"image/food/TraGaoRang.jpg","__v":0}
+{"_id":{"$oid":"61935d2d89f8c56416a01a16"},"maqa":"6193595389f8c56416a019f2","tenmonan":"Trà sữa bạc hà","gia":30000,"urlhinhanh":"image/food/TraSuaBacHa.jpg","__v":0}
+{"_id":{"$oid":"61935d3e89f8c56416a01a18"},"maqa":"6193595389f8c56416a019f2","tenmonan":"Trà sữa matcha","gia":50000,"urlhinhanh":"image/food/TraSuaMatcha.jpg","__v":0}
+{"_id":{"$oid":"61935d7989f8c56416a01a1a"},"maqa":"6193595389f8c56416a019f2","tenmonan":"Trà sữa ô long","gia":50000,"urlhinhanh":"image/food/TraSuaOlongNuong.jpg","__v":0}
+{"_id":{"$oid":"61935dfa89f8c56416a01a1c"},"maqa":"6193599489f8c56416a019f4","tenmonan":"Cơm gà truyền thống","gia":30000,"urlhinhanh":"image/food/ComGaTruyenThong.jpg","__v":0}
+{"_id":{"$oid":"61935e0c89f8c56416a01a1e"},"maqa":"6193599489f8c56416a019f4","tenmonan":"Cơm gà xiên que","gia":30000,"urlhinhanh":"image/food/ComGaXienQue.jpg","__v":0}
+{"_id":{"$oid":"61935e2089f8c56416a01a20"},"maqa":"6193599489f8c56416a019f4","tenmonan":"Gà Quay 1 miếng","gia":20000,"urlhinhanh":"image/food/GaQuay1Mieng.jpg","__v":0}
+{"_id":{"$oid":"61935e2e89f8c56416a01a22"},"maqa":"6193599489f8c56416a019f4","tenmonan":"Gà rán 1 miếng","gia":25000,"urlhinhanh":"image/food/GaRan1Mieng.jpg","__v":0}
+{"_id":{"$oid":"61935e4489f8c56416a01a24"},"maqa":"6193599489f8c56416a019f4","tenmonan":"Gà rán 3 miếng","gia":60000,"urlhinhanh":"image/food/GaRan3Mieng.jpg","__v":0}
+{"_id":{"$oid":"61935e4f89f8c56416a01a26"},"maqa":"6193599489f8c56416a019f4","tenmonan":"Gà rán 12 miếng","gia":80000,"urlhinhanh":"image/food/GaRan12Mieng.jpg","__v":0}
+{"_id":{"$oid":"61935e7c89f8c56416a01a28"},"maqa":"619359db89f8c56416a019f6","tenmonan":"Burger Tôm","gia":40000,"urlhinhanh":"image/food/BurgerTom.jpg","__v":0}
+{"_id":{"$oid":"61935e8d89f8c56416a01a2a"},"maqa":"619359db89f8c56416a019f6","tenmonan":"Burger Zinger","gia":45000,"urlhinhanh":"image/food/BurgerZinger.jpg","__v":0}
+{"_id":{"$oid":"61935ea989f8c56416a01a2c"},"maqa":"619359db89f8c56416a019f6","tenmonan":"Khoai Tây chiên","gia":30000,"urlhinhanh":"image/food/KhoaiTayChien.jpg","__v":0}
+{"_id":{"$oid":"61935eca89f8c56416a01a2e"},"maqa":"619359db89f8c56416a019f6","tenmonan":"Nước suối","gia":10000,"urlhinhanh":"image/food/Aquafina.jpg","__v":0}
+{"_id":{"$oid":"61935ee389f8c56416a01a30"},"maqa":"619359db89f8c56416a019f6","tenmonan":"Pepsi","gia":20000,"urlhinhanh":"image/food/Pepsi.png","__v":0}
+{"_id":{"$oid":"61935f3789f8c56416a01a33"},"maqa":"619359db89f8c56416a019f6","tenmonan":"Phô mai viên","gia":25000,"urlhinhanh":"image/food/PhoMaiVien.jpg","__v":0}

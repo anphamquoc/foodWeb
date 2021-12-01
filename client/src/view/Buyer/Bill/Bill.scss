@@ -28,6 +28,9 @@ main.bill {
         .quantity {
           font-size: 25px;
         }
+        .price {
+          text-align: right;
+        }
         .item-description {
           display: flex;
           flex-direction: row;

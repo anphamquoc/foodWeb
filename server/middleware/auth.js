@@ -6,6 +6,9 @@ const verifyToken = async (req, res, next) => {
   if (!token) {
     return res.json({ success: false, message: "Token not found" });
   }
+  //mã hash256
+  //thông tin mình thêm vào sau khi login thành công
+  //token
   try {
     const decoded = jwt.verify(token, process.env.ACCESS_TOKEN_SECRET);
     req.userId = decoded.userId;
