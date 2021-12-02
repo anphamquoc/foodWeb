@@ -1,7 +1,6 @@
 import React from "react";
 
 const Item = ({ food }) => {
-  console.log(food);
   return (
     <div className="item">
       <img src={`/${food.urlhinhanh}`} alt="Mon an" />

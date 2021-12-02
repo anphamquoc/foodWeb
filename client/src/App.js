@@ -11,8 +11,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Info from "./view/Buyer/auth/Info";
 import CartView from "./view/Buyer/Cart/CartView";
 import CheckoutView from "./view/Buyer/Checkout/CheckoutView";
-import DashboardView from "view/Seller/Dashboard/DashboardView";
+import DashboardView from "view/Admin/Dashboard/DashboardView";
 import BillView from "view/Buyer/Bill/BillView";
+import RestaurantView from "view/Seller/Restaurant/RestaurantView";
+import FoodView from "view/Seller/Food/FoodView";
+import UserView from "view/Admin/User/UserView";
+import AdminRestaurantView from "view/Admin/Restaurant/AdminRestaurantView";
+import OrderView from "view/Seller/Order/OrderView";
 import {
   ApolloClient,
   InMemoryCache,
@@ -61,6 +66,18 @@ function App() {
           <ProtectedRoute path="/checkout" component={CheckoutView} />
           <ProtectedRoute path="/bill" component={BillView} />
           {/* Seller */}
+          <ProtectedRoute
+            path="/seller/restaurant"
+            component={RestaurantView}
+          />
+          <ProtectedRoute path="/seller/order" component={OrderView} />
+          <ProtectedRoute path="/seller/food/:id" component={FoodView} />
+          <ProtectedRoute path="/admin/user" component={UserView} />
+          <ProtectedRoute
+            path="/admin/restaurant"
+            component={AdminRestaurantView}
+          />
+          {/* Admin */}
           <ApolloProvider client={client}>
             <ProtectedRoute path="/dashboard" component={DashboardView} />
           </ApolloProvider>

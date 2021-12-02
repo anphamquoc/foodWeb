@@ -3,6 +3,7 @@ const router = express.Router();
 const QuanAn = require("../model/QuanAn");
 const verifyToken = require("../middleware/auth");
 const mongoose = require("mongoose");
+const { verifySeller } = require("../middleware/authorization");
 router.get("/", async (req, res) => {
   try {
     const quanAn = await QuanAn.find();
@@ -35,34 +36,39 @@ router.get("/:id", async (req, res) => {
   }
 });
 
-router.post("/", verifyToken, async (req, res) => {
-  const {
-    matp,
-    loaimonan,
-    tenqa,
-    diachi,
-    dienthoai,
-    thoigianphucvu,
-    dattoithieu,
-    urlhinhanh,
-  } = req.body;
-  try {
-    const newQA = new QuanAn({
+router.post(
+  "/",
+  verifyToken,
+  verifySeller(["seller", "admin"]),
+  async (req, res) => {
+    const {
       matp,
+      loaimonan,
       tenqa,
       diachi,
-      loaimonan,
       dienthoai,
       thoigianphucvu,
       dattoithieu,
-      nguoisohuu: req.userId,
       urlhinhanh,
-    });
-    await newQA.save();
-    return res.json({ success: true, message: "Tao quan thanh cong", newQA });
-  } catch (error) {
-    return res.status(500).json({ success: false, message: error.message });
+    } = req.body;
+    try {
+      const newQA = new QuanAn({
+        matp,
+        tenqa,
+        diachi,
+        loaimonan,
+        dienthoai,
+        thoigianphucvu,
+        dattoithieu,
+        nguoisohuu: req.userId,
+        urlhinhanh,
+      });
+      await newQA.save();
+      return res.json({ success: true, message: "Tao quan thanh cong", newQA });
+    } catch (error) {
+      return res.status(500).json({ success: false, message: error.message });
+    }
   }
-});
+);
 
 module.exports = router;

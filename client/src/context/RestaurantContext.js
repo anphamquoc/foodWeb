@@ -43,6 +43,7 @@ const RestaurantContextProvider = ({ children }) => {
   }, []);
 
   const restaurantContextData = {
+    loadRestaurant,
     restaurantState,
   };
 

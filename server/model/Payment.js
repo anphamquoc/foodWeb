@@ -11,7 +11,7 @@ const PaymentSchema = Schema({
     required: true,
   },
   userid: {
-    type: String,
+    type: mongoose.Schema.ObjectId,
     required: true,
   },
   status: {

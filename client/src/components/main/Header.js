@@ -4,7 +4,7 @@ import { AuthContext } from "../../context/AuthContext";
 import { Offcanvas } from "react-bootstrap";
 const Header = () => {
   const {
-    authState: { user },
+    authState: { user, isSeller },
     logoutUser,
   } = useContext(AuthContext);
   const [show, setShow] = useState(false);
@@ -48,6 +48,26 @@ const Header = () => {
                       <NavLink to={`/dashboard`} className="link">
                         Thông tin trang web
                       </NavLink>
+                    )}
+                    {isSeller && (
+                      <>
+                        <NavLink to={`/seller/restaurant`} className="link">
+                          Thông tin nhà hàng của bạn
+                        </NavLink>
+                        <NavLink to={`/seller/order`} className="link">
+                          Thông tin đơn hàng hiện có
+                        </NavLink>
+                      </>
+                    )}
+                    {user.role === "admin" && (
+                      <>
+                        <NavLink to={`/admin/user`} className="link">
+                          Thông tin người dùng trang web
+                        </NavLink>
+                        <NavLink to={`/admin/restaurant`} className="link">
+                          Thông tin tất cả nhà hàng
+                        </NavLink>
+                      </>
                     )}
                     <button className="link" onClick={logout}>
                       Đăng xuất

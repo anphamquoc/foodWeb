@@ -11,6 +11,10 @@ const MonAnRouter = require("./routers/monAn");
 const CartRouter = require("./routers/cart");
 const SearchRouter = require("./routers/search");
 const PaymentRouter = require("./routers/payment");
+const S_RestaurantRouter = require("./routers/Seller/quanAn");
+const S_FoodRouter = require("./routers/Seller/monAn");
+const S_OrderRouter = require("./routers/Seller/order");
+const UserRouter = require("./routers/Admin/user");
 const connectDB = async () => {
   try {
     await mongoose.connect(process.env.MONGODB, {
@@ -37,5 +41,11 @@ app.use("/monan", MonAnRouter);
 app.use("/cart", CartRouter);
 app.use("/search", SearchRouter);
 app.use("/payment", PaymentRouter);
+//seller
+app.use("/seller/restaurant", S_RestaurantRouter);
+app.use("/seller/food", S_FoodRouter);
+app.use("/seller/payment", S_OrderRouter);
+//admin
+app.use("/admin/users", UserRouter);
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server start at ${PORT}`));

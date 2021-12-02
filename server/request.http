@@ -99,3 +99,10 @@ Content-Type: application/json
 {
     "quantity": 3
 }
+###
+GET http://localhost:5000/seller/restaurant
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTkzMjFlYjk1Y2QwZDVlODg1Y2QxOWEiLCJyb2xlIjoiY2xpZW50IiwiaWF0IjoxNjM4MzU1MTM0LCJleHAiOjE2Mzg0NDE1MzR9.WuHWDIUH0xJzTnY4J4skuDW2Fz5T8Aiity4wPMOfwuY
+
+###
+GET http://localhost:5000/seller/payment
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTc3ZDIyMDZkYTk2OGM0YzcyNmMyZjIiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2Mzg0MzcwMDksImV4cCI6MTYzODUyMzQwOX0.frjg1gj-rswbvCpHLQyJfafkwh9IgqA1agpyMIE-taU

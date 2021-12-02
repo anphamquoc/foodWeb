@@ -7,7 +7,6 @@ const Bill = () => {
     paymentState: { allPayment, loadingAllPayment },
   } = useContext(PaymentContext);
   if (loadingAllPayment) return "Loading...";
-  console.log(allPayment);
   return (
     <main className="bill">
       {allPayment === null || allPayment.length === 0 ? (

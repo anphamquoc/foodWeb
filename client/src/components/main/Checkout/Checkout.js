@@ -19,7 +19,6 @@ const Checkout = () => {
     (acc, item) => acc + item.quantity * item.price,
     0
   );
-  console.log(cartProduct);
   const handleSuccess = () => {
     setSuccess(true);
     checkoutSuccess(cartProduct, total, cartProduct[0].tenquan);
@@ -85,25 +84,26 @@ const Checkout = () => {
               </div>
             </div>
           </div>
+
+          <div className="total">
+            <div className="total-description">
+              <h5>Tổng cộng</h5>
+              <p>{total + 20000}</p>
+            </div>
+            <button
+              onClick={handleSuccess}
+              className="btn"
+              disabled={user.hoten === undefined}
+            >
+              {user.hoten === undefined
+                ? "Vui lòng cập nhật thông tin"
+                : "Thanh toán"}
+            </button>
+          </div>
         </>
       ) : (
         <h1>Không có món nào để thanh toán</h1>
       )}
-      <div className="total">
-        <div className="total-description">
-          <h5>Tổng cộng</h5>
-          <p>{total + 20000}</p>
-        </div>
-        <button
-          onClick={handleSuccess}
-          className="btn"
-          disabled={user.hoten === undefined}
-        >
-          {user.hoten === undefined
-            ? "Vui lòng cập nhật thông tin"
-            : "Thanh toán"}
-        </button>
-      </div>
     </main>
   );
 };

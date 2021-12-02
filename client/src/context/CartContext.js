@@ -18,21 +18,21 @@ const CartContextProvider = ({ children }) => {
   });
   const [addProductStatus, setAddProductStatus] = useState(true);
 
-  useEffect(() => {
-    const loadCart = async () => {
-      try {
-        const response = await axios.get(`${apiUrl}/cart`);
-        if (response.data.success) {
-          dispatch({
-            type: LOAD_CART,
-            payload: response.data.cart,
-          });
-        }
-        return response.data;
-      } catch (error) {
-        console.log(error.message);
+  const loadCart = async () => {
+    try {
+      const response = await axios.get(`${apiUrl}/cart`);
+      if (response.data.success) {
+        dispatch({
+          type: LOAD_CART,
+          payload: response.data.cart,
+        });
       }
-    };
+      return response.data;
+    } catch (error) {
+      console.log(error.message);
+    }
+  };
+  useEffect(() => {
     loadCart();
   }, []);
 
@@ -42,7 +42,6 @@ const CartContextProvider = ({ children }) => {
         `${apiUrl}/cart/${productId}`,
         newProduct
       );
-      console.log(response.data);
       if (response.data.success) {
         dispatch({
           type: ADD_TO_CART,

@@ -12,7 +12,6 @@ const Cart = () => {
     (total, c) => c.quantity * c.price + total,
     0
   );
-  console.log(cartProduct);
   return (
     <main className="cart">
       {cartProduct === null || cartProduct.length === 0 ? (

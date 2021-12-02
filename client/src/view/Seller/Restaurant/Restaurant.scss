@@ -1,0 +1,97 @@
+.seller-restaurant {
+  width: 100%;
+  margin-top: 100px;
+  padding: 0 40px;
+  h1 {
+    font-weight: bold;
+  }
+  .swiper-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    .swiper-slide {
+      cursor: pointer;
+      margin: 0 10px;
+      position: relative;
+      .delete-icon {
+        width: 30px;
+        height: 30px;
+        border-radius: 10px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: #ff3c41;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 20px;
+          height: 20px;
+          filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(37deg)
+            brightness(114%) contrast(114%);
+        }
+      }
+      .food-image,
+      .add-image {
+        width: 100%;
+        height: 200px;
+        border-radius: 10px;
+        margin-bottom: 5px;
+      }
+      .add-image {
+        position: relative;
+        border: 2px dotted rgba(0, 0, 0, 0.5);
+        img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+      .food-address {
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: black;
+      }
+      .filter-name {
+        color: #676767;
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+      .basic-info {
+        display: flex;
+        align-items: center;
+        color: #676767;
+        gap: 20px;
+        .ranking {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+          font-size: inherit;
+        }
+        img {
+          width: 24px;
+          height: 24px;
+        }
+        .time-distance {
+          display: flex;
+          gap: 10px;
+          font-size: inherit;
+          .time {
+            display: inherit;
+            justify-content: center;
+            align-items: center;
+            font-size: inherit;
+            gap: 10px;
+          }
+          .distance {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: inherit;
+          }
+        }
+      }
+    }
+  }
+}

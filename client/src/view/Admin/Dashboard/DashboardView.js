@@ -1,5 +1,5 @@
 import Header from "components/main/Header";
-import Dashboard from "components/main/Dashboard/Dashboard";
+import Dashboard from "components/admin/Dashboard/Dashboard";
 import React from "react";
 import "./Dashboard.scss";
 

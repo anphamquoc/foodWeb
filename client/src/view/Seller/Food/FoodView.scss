@@ -1,0 +1,59 @@
+.food-seller {
+  width: 100%;
+  margin-top: 100px;
+  padding: 0 40px;
+  h1 {
+    font-weight: bold;
+  }
+  .items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    gap: 20px;
+    .item {
+      cursor: pointer;
+      display: flex;
+      flex-direction: row;
+      padding: 10px;
+      border-radius: 5px;
+      gap: 10px;
+      position: relative;
+      outline: 1px solid rgba(0, 0, 0, 0.3);
+      &:hover {
+        outline: 1px solid #00b14f;
+      }
+      .delete-icon {
+        width: 30px;
+        height: 30px;
+        border-radius: 10px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: #ff3c41;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 20px;
+          height: 20px;
+          filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(37deg)
+            brightness(114%) contrast(114%);
+        }
+      }
+      img {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+      }
+    }
+    .item-add {
+      border: 1px dotted rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+  }
+}

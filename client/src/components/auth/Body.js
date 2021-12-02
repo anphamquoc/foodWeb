@@ -43,7 +43,7 @@ const Body = ({ login }) => {
     <main className="info-user">
       <div className="login-text">
         <div className="login-text-head">
-          <h4>Đăng {login === true ? "nhập" : "kí"} vào GoodFood</h4>
+          <h4>Đăng {login === true ? "nhập" : "ký"} vào GoodFood</h4>
           <img src="image/icon/lock.svg" alt="lock icon" />
         </div>
         <p className="description">Nhập tài khoản của bạn</p>
@@ -92,13 +92,12 @@ const Body = ({ login }) => {
       </p>
       {login === false ? (
         <p className="handlebtn">
-          Đã có tài khoản
-          <NavLink to="/login">Đăng nhập</NavLink>.
+          Đã có tài khoản, <NavLink to="/login">Đăng nhập</NavLink>.
         </p>
       ) : (
         <p className="handlebtn">
           Không có tài khoản,
-          <NavLink to="/register"> Đăng kí</NavLink>.
+          <NavLink to="/register"> Đăng ký</NavLink>.
         </p>
       )}
     </main>

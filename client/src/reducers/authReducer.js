@@ -9,6 +9,7 @@ export const authReducer = (state, action) => {
         authLoading: false,
         isAuthenticated: payload.isAuthenticated,
         user: payload.user,
+        isSeller: payload.isSeller,
       };
     case UPDATE_USER:
       return {

@@ -5,6 +5,7 @@ import { authReducer } from "../reducers/authReducer";
 import {
   apiUrl,
   LOCAL_STORAGE_TOKEN_NAME,
+  ROLE,
   SET_AUTH,
   UPDATE_USER,
 } from "./constant";
@@ -16,6 +17,7 @@ const AuthContextProvider = ({ children }) => {
     authLoading: true,
     isAuthenticated: false,
     user: null,
+    isSeller: false,
   });
   const [changeUserStatus, setChangeUserStatus] = useState(false);
   const loadUser = async () => {
@@ -26,12 +28,14 @@ const AuthContextProvider = ({ children }) => {
     }
     try {
       const response = await axios.get(`${apiUrl}/user`);
+      const isSeller = ROLE.includes(response.data.user.role) ? true : false;
       if (response.data.success) {
         dispatch({
           type: SET_AUTH,
           payload: {
             isAuthenticated: true,
             user: response.data.user,
+            isSeller,
           },
         });
       } else {
